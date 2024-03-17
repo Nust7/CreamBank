@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --bg-fundo-form: #3b3b3b00; 
+    --borda-form: #1e0c83;
+}
+
+body {
+    background: url(/src/imagens/png-roubado2.png);
+    background-size: cover;
+}
+
+form { 
+    color: white;
+}
+.form {
+    text-align: center;
+}
+
+.img-fofa img {
+    padding-top: 2rem;
+}
+section {
+    margin: 5rem 5rem;
+    border-radius: 2rem;
+    height: 50rem;
+    width: 28%;
+    background: #0000006c;
+}
+section h2 {
+    text-align: center;
+    font-size: 1.2rem
+}
+
+section h4 {
+    text-align: center;
+    border-bottom: 5px solid var(--borda-form);
+    padding-bottom: 1rem;
+    
+}
+
+.form-group1 {
+    margin-top: 1rem;
+    margin-left: .4rem;
+    display: inline-block;
+}
+
+#data {
+    text-align: left;
+    margin-right: 16.5rem;
+}
+
+#nome {
+    width: 13.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    margin-left: .4rem;
+    border: 2px solid var(--borda-form);
+    font-size: 1.1rem;
+}
+#sobrenome {
+    width: 13.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    margin-left: .8rem;
+    border: 2px solid var(--borda-form);
+    font-size: 1.1rem;
+}
+
+#password {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+#email {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+#dataNascimento {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+footer {
+    width: 30rem;
+    justify-content: center;
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.pezinho p {
+    width: 30rem;
+    justify-content: center;
+    font-size: .7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+button {
+    width:  9rem;
+    padding: 1rem 0;
+    background: var(--borda-form);
+    color: white;
+    border: 4px solid var(--borda-form);
+    border-radius: 1.2rem;
+    cursor: pointer;
+}

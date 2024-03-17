@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tenor Sans';
+}
+
+:root {
+    --color-h1: #ffffff;
+    --bg-chaves: #c6c9c2;
+    --bg-key: #3f3e3e; 
+    --color-p: #020202;
+    --color-p-footer: #ffffff; 
+}
+
+a {
+    text-decoration: none;
+}
+.container { 
+    text-align: center;
+}
+
+.container-dois { 
+    width: 30%;
+    height: 20rem;
+    margin: 2rem 0.5rem;
+    justify-content: center; align-items: center;
+    text-align: center;
+    
+}
+.container-dois h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--color-h1);
+}
+.container-dois h2 {
+    color: var(--color-h1);
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+.container-dois p {
+    color: var(--color-h1);
+    font-size: 1.2rem;
+    width: 86%;
+    margin: 0 auto;
+    font-weight: 500;
+
+}
+
+.card-container {
+    justify-content: center;  text-align: center;
+    align-items: center;
+    display: flex;
+    
+}
+.container-second-card{
+    display: flex;
+    gap: 8rem;
+}
+.container-second-card p{
+    color: var(--color-p);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Tenor Sans';
+    font-weight: bold;
+}
+
+.img-key-bg i{
+    font-size: 4rem;
+    color: var(--bg-key);
+}
+
+.abra-conta {
+    width: 290px;
+    height: 190px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--bg-chaves);
+    border-radius: 1rem;
+}
+
+.container-second-card-two {
+    display: flex;
+    width: 290px;
+    height: 190px;
+    padding: 2.5rem 0.1rem;
+    border-radius: 1rem;
+    background-color: var(--bg-chaves);
+}
+
+.container-second h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 18rem;
+    padding-top: 0.9rem;
+    color: var(--color-p)
+}
+
+.img-stonk a{
+    font-size: 4rem;
+    color: var(--bg-key);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+footer p {
+    color: var(--color-p-footer);
+    width: 36%;
+    font-size: .7rem;
+    bottom: 100%;
+    justify-content: end;  align-items: end; text-align: left;
+    margin-top: 3.8rem;
+    opacity: .6;
+}
