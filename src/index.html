@@ -14,7 +14,7 @@
         <div class="img-fofa">
             <img src="/src/imagens/logo.png" alt="">
         </div>
-        <form action="POST">
+        <form id="form-cadastrar"  action="http://localhost:8080/cliente/cadastrar" method="post">
             <h2> Criar uma nova conta</h2>
             <h4> é rápido e fácil.</h4>
             <br>
@@ -42,7 +42,7 @@
             <label class="pezinho">
                 <p>Ao clicar em cadastre-se, você concorda com nossos termos, politica de privacidade e Politica de Cookies. Optando por receber notificações por SMS, você pode cancelar a qualquer momento. </p>
             </label>
-                <button type="submit">Cadastre-se</button>
+                <button onclick="enviarFormulario()">Cadastre-se</button>
         </form>
         
     </section>
