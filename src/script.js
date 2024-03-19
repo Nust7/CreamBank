@@ -10,7 +10,7 @@ function enviarFormulario() {
   });
 
   // Envia o objeto JSON para a API (substitua a URL pela sua API)
-  fetch('http://localhost:8080/cliente/cadastrarTeste', {
+  fetch('http://localhost:8080/cliente/cadastrar', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json' // Configura o tipo de mídia como JSON

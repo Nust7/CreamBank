@@ -73,7 +73,7 @@ button:hover {
 .lista-horizontal ul{
     margin-top: 2rem;
     display: flex;
-    background: white;
+    background: #ffffff;
     border-radius: .2rem;   
     justify-content: space-between;
     text-align: center; align-items: center;
@@ -256,3 +256,10 @@ input{
     background: #ffffff;
 }
 
+.botao-infos {
+    display: none;
+}
+
+.botao-infos:active {
+    display: block;
+}

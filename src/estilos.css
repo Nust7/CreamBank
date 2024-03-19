@@ -14,7 +14,7 @@
 body {
     background: url(/src/imagens/png-roubado2.png);
     background-size: cover;
-    overflow: hidden;
+    height: 100vw;
 }
 
 form { 
@@ -76,7 +76,7 @@ section h4 {
     font-size: 1.1rem;
 }
 
-#password {
+#senha {
     width: 85%;
     margin-left: 1rem;
     padding: 0 .5rem;
@@ -87,6 +87,34 @@ section h4 {
 }
 
 #email {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+#endereco {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+
+}
+#telefone {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+#cpfCnpj {
     width: 85%;
     margin-left: 1rem;
     padding: 0 .5rem;
