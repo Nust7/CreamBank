@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tenor Sans';
+}
+
+:root {
+    --bg-fundo2-form: #3b3b3b00; 
+}
+
+body {
+    background: #12111f;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 3px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+h2 {
+    color: white;
+}
+.login-inicial {
+    display: flex;
+    text-align: center; align-items: center; justify-content: center;
+    gap: 10rem;
+    margin: 1.2rem 1.4rem;
+}
+
+button {
+    padding: 0.5rem 2.2rem;
+    background: var(--bg-fundo-form);
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #9b9a9a;
+    color: black;
+    transition: .7s;
+}
+
+.container-lista {
+    padding: 0.5rem 1rem;
+    display: flex;
+    width: 100vw;
+}
+
+.container-lista a {
+    color: black;
+}
+
+
+.lista-horizontal {
+    height: 10rem;
+    margin: 0 auto;
+}
+
+.lista-horizontal ul{
+    margin-top: 2rem;
+    display: flex;
+    background: white;
+    border-radius: .2rem;   
+    justify-content: space-between;
+    text-align: center; align-items: center;
+}
+.lista-horizontal ul img{
+    width: 1.9rem;
+}
+
+.lista-horizontal li {
+    padding: 1.3rem 4rem; 
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.lista-horizontal li:hover {
+    background: #b3b1b1;
+    opacity: .9;
+    transition: 1s;
+}
+
+.container-left{
+    width: 100vw;
+    height: 72vh;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.conteudo-left{
+    width: 30rem;
+    height: 38rem;
+    margin: 2rem 2rem;
+    background: #ccc;
+    border-radius: .5rem;
+
+}
+
+.conteudo-right {
+    width: 30rem;
+    height: 38rem;
+    left: 100%;
+    margin: 2rem 2rem;
+    background: #ccc;
+    border-radius: .5rem;
+}
+
+.left-h2 {
+    padding: 2rem 2rem;
+    text-transform: capitalize;
+    color: #12111f;
+}
+.borda {
+    padding-top: 2rem;
+    border-bottom: 2px solid #12111f;
+}
+
+.left-h3 {
+    font-size: 1.3rem;
+    color: #12111f;
+    font-weight: 600;
+    padding: 0 2rem;
+}
+
+.left-p {
+    margin: 1rem 0.5rem;
+    padding: 0 2rem;
+    color: #12111f;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.left-bottom {
+    margin: 3rem 0;
+}
+
+.left-h33 {
+    font-size: 1.3rem;
+    color: #12111f;
+    font-weight: 600;
+    padding: 0 2rem;
+}
+
+.left-p2 {
+    margin: 1rem 0.5rem;
+    padding: 0 2rem;
+    color: #12111f;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.borda2 {
+    width: 26rem;
+    margin: 3.5rem auto;
+    border: 1px solid #12111f;
+}
+
+.conteudo-right {
+    padding: 2rem 2rem;
+}
+
+.right-h2 {
+    font-size: 1.5rem;
+    color: #12111f;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #12111f;
+}
+
+.main-right h2{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f2111;
+}
+
+.main-right p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #12111f;
+}
+.botao-infos {
+    margin-top: 2rem;
+    height: 38rem;
+}
+.conteudo-botao {
+    width: 40rem;
+    height: 36rem;
+    position: relative;
+    margin: 2.2rem auto;
+    background: #ccc;
+    border-radius: .5rem;
+    justify-content: center; text-align: center;
+    padding: 10rem;
+}
+
+input{
+    border: 0;
+    border-bottom: 3px solid #585252;
+    padding: .2rem;
+    background: none;
+    outline: 0;
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.botaozin {
+    font-size: 2rem;
+    color: #12111f;
+}
+
+.botao-container {
+    margin: 0 auto;
+}
+.botaum2 {
+    border: 2px solid red;
+    width: 30rem;
+}
+
+.bot {
+    position: relative;
+    border: 2px solid red;
+    text-align: center;
+    width: 40rem;
+    
+}

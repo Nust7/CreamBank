@@ -14,6 +14,7 @@
 body {
     background: url(/src/imagens/png-roubado2.png);
     background-size: cover;
+    overflow: hidden;
 }
 
 form { 
@@ -29,7 +30,7 @@ form {
 section {
     margin: 5rem 5rem;
     border-radius: 2rem;
-    height: 50rem;
+    height: 53rem;
     width: 28%;
     background: #0000006c;
 }
@@ -124,6 +125,21 @@ footer p{
     margin-left: 2rem;
     margin-bottom: 3rem;
 }
+
+.selecao-unidade{
+    margin-right: 16.5rem;
+}
+
+#itens {
+    width: 85%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    height: 3.2rem;
+    border: 2px solid var(--borda-form);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
 button {
     width:  9rem;
     padding: 1rem 0;
