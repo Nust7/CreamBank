@@ -39,21 +39,3 @@ function enviarFormulario() {
     alert('Erro durante o envio do formulário. Por favor, tente novamente mais tarde.');
   });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Selecione o item de lista com a classe "transfer"
-  var itemTransfer = document.querySelector('.transfer');
-
-  // Selecione o elemento com a classe "botao-infos"
-  var botaoInfos = document.querySelector('.botao-infos');
-
-  // Adicione um event listener para o clique no item de lista com a classe "transfer"
-  itemTransfer.addEventListener('click', function() {
-      // Toggle (alternar) a exibição do elemento com a classe "botao-infos"
-      if (botaoInfos.style.display === 'none' || botaoInfos.style.display === '') {
-          botaoInfos.style.display = 'block';
-      } else {
-          botaoInfos.style.display = 'none';
-      }
-  });
-});

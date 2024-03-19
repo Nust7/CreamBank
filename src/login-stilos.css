@@ -247,11 +247,51 @@ input{
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
-
 }
 
 .bot button:hover {
-    color: #12111f;
-    
+    color: #12111f;    
 }
 
+.botao-roubo-celular {
+    display: none;
+    width: 40rem;
+    height: 36rem;
+    position: relative;
+    margin: 2.2rem auto;
+    background: #ccc;
+    border-radius: .5rem;
+    justify-content: center; text-align: center;
+    padding: 10rem;
+}
+
+.conteudo-botao-roubo {
+    width: 100%;
+}
+
+.roubo-celular {
+    color: #12111f;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.conteudo-botao-roubo p {
+    width: 30rem;
+    margin-left: -5.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #12111f;
+    margin-bottom: 2rem;
+}
+.conteudo-botao-roubo label {
+    color: #12111f;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.button-bloq{
+    background: #12111f;
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    cursor: pointer;
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/login-stilos.css">
-    <script src="/src/script.js"></script>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/button_displays.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
             <ul>
                 <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
                 <li class="transfer clickado"><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a></li>
-                <li><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de celular</a></li>
+                <li class="bloq-telefone"><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de celular</a></li>
                 <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>cartões</a></li>
                 <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a></li>
                 <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a></li>
@@ -66,6 +67,15 @@
             </div>
         </div>
     </section>
+    <section class="botao-roubo-celular"> 
+        <div class="conteudo-botao-roubo">
+            <h2 class="roubo-celular">celular Roubado ?</h2>
+            <label for="#">Digite sua senha:</label>
+            <input type="text" name="senha" id="quantidade">
+            <p>Clique aqui abaixo para trancar sua conta </p>
+            <button class="button-bloq">Bloquear</button>
+        </div>
+    </section>  
 </body>
 </html>
 
