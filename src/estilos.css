@@ -30,7 +30,7 @@ form {
 section {
     margin: 5rem 5rem;
     border-radius: 2rem;
-    height: 53rem;
+    height: 70rem;
     width: 28%;
     background: #0000006c;
 }
@@ -158,7 +158,7 @@ footer p{
     margin-right: 16.5rem;
 }
 
-#itens {
+#agencia {
     width: 85%;
     margin-left: 1rem;
     padding: 0 .5rem;

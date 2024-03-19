@@ -35,24 +35,24 @@
             </div>
 
             <div class="form-group">
-                <input type="text" id="cpfCnpj" maxlength="14" placeholder="insira o cpf" required><br><br>
+                <input type="text" id="cpfCnpj" name="cpfCnpj" maxlength="14" placeholder="insira o cpf" required><br><br>
             </div>
 
             <div class="form-group">
-                <input type="tel" id="telefone" placeholder="Telefone" required><br><br>
+                <input type="tel" id="telefone" name="telefone"  placeholder="Telefone" required><br><br>
             </div>
 
             <div class="form-group">
-                <input type="text" id="endereco" placeholder="Endereço" required><br><br>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço" required><br><br>
             </div>
         
             <div class="form-group">
-                <label id="data">Data de Nascimento </label>
+                <label id="data" >Data de Nascimento </label>
                 <input type="date" id="dataNascimento" placeholder="Data" name="dataNascimento" required><br><br>
             </div>
 
-            <label class="selecao-unidade" for="itens">Selecione a unidade:</label><br>
-            <select id="itens" name="itens">
+            <label class="selecao-unidade" name="agencia" for="itens">Selecione a unidade:</label><br>
+            <select id="agencia" name="agencia">
               <option value="1">Rua Oscar Freire, 40</option>
               <option value="2">Avenida Paulista, 123</option>
               <option value="3">Avenida Brigadeiro Faria Lima, 456</option>

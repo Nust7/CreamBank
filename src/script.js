@@ -3,6 +3,9 @@ function enviarFormulario() {
   var formulario = document.getElementById("form-cadastrar");
   var dadosFormulario = new FormData(formulario);
 
+  dadosFormulario.append("ativo", true);
+  dadosFormulario.append("saldo", 1000);
+  
   // Converte os dados do formulário para um objeto JSON
   var objetoJSON = {};
   dadosFormulario.forEach(function(valor, chave){
