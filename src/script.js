@@ -1,3 +1,9 @@
+const apiKey = "http://localhost:8080/cliente/buscarTodos";
+
+const res = await fetch(apiKey);
+const data = await res.json()
+console.log(data)
+
 function enviarFormulario() {
   // Obtém os dados do formulário
   var formulario = document.getElementById("form-cadastrar");
