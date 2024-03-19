@@ -222,6 +222,7 @@ input{
 .botaozin {
     font-size: 2rem;
     color: #12111f;
+    text-transform: capitalize;
 }
 
 .botao-container {
@@ -238,28 +239,19 @@ input{
     justify-content: space-evenly;
 }
 
-.bot h2 {
-    color: #12111f;
-}
-
 .bot1 {
     margin: 2rem;
-    padding: 0.7rem 2.2rem;
+    padding: 1rem 2.5rem;
     color: white;
     background: #12111f;
     border: none;
     cursor: pointer;
+    font-size: 1.5rem;
+
 }
 
 .bot button:hover {
     color: #12111f;
-    background: #ffffff;
+    
 }
 
-.botao-infos {
-    display: none;
-}
-
-.botao-infos:active {
-    display: block;
-}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/login-stilos.css">
+    <script src="/src/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -18,12 +19,12 @@
     <section class="container-lista">
         <div class="lista-horizontal">
             <ul>
-                <li><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
-                <li><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a></li>
+                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
+                <li class="transfer clickado"><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a></li>
                 <li><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de celular</a></li>
-                <li><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>cartões</a></li>
-                <li><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a></li>
-                <li><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a></li>
+                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>cartões</a></li>
+                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a></li>
+                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a></li>
             </ul>
         </div>
     </section>
@@ -32,7 +33,7 @@
         <div class="conteudo-left">
             <h2 class="left-h2">extrato <div class="borda"></div></h2>
             <h3 class="left-h3"> Transferência Realizada</h3>
-            <p  class="left-p">data: <span>__/__/__</span>  </p> 
+            <p  class="left-p">data: <span>__/__/__</span></p> 
             <p  class="left-p">para: <span>Nome</span></p>
             <p  class="left-p">valor: <span>valor</span></p>
             <div class="borda2"></div>
@@ -61,11 +62,10 @@
             <input type="text" id="valor" placeholder="Digite o valor">
 
             <div class="bot"> 
-                <h2 class="h2-bot">Deseja Prosseguir com a transferência?</h2>
-                <button class="bot1"> sim </button>
-                <button class="bot1"> não </button>
+                <button class="bot1"> Transferir </button>
             </div>
         </div>
     </section>
 </body>
 </html>
+
