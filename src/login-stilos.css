@@ -233,9 +233,26 @@ input{
 }
 
 .bot {
-    position: relative;
-    border: 2px solid red;
-    text-align: center;
-    width: 40rem;
-    
+    width: 30rem;
+    margin-left: -5rem;
+    justify-content: space-evenly;
 }
+
+.bot h2 {
+    color: #12111f;
+}
+
+.bot1 {
+    margin: 2rem;
+    padding: 0.7rem 2.2rem;
+    color: white;
+    background: #12111f;
+    border: none;
+    cursor: pointer;
+}
+
+.bot button:hover {
+    color: #12111f;
+    background: #ffffff;
+}
+
