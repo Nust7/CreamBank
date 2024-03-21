@@ -19,6 +19,7 @@ a {
 }
 .container { 
     text-align: center;
+    display: flex;
 }
 
 .container-dois { 
@@ -56,7 +57,7 @@ a {
 }
 .container-second-card{
     display: flex;
-    gap: 8rem;
+    gap: 5rem;
 }
 .container-second-card p{
     color: var(--color-p);
@@ -84,7 +85,7 @@ a {
     display: flex;
     width: 290px;
     height: 190px;
-    padding: 2.5rem 0.1rem;
+    padding: 2.2rem 0.1rem;
     border-radius: 1rem;
     background-color: var(--bg-chaves);
 }
@@ -103,11 +104,14 @@ a {
 }
 
 footer {
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 20px; /* Adiciona algum espaçamento interno ao rodapé */
     justify-content: space-between;
-    margin-top: 10rem;
+    display: flex;
 }
-
 footer p {
     color: var(--color-p-footer);
     width: 36%;
