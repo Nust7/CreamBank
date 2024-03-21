@@ -14,6 +14,7 @@
 
         <div class="login-inicial">
             <h2>Olá,<span></span></h2>
+            <h2 id="nomeTitulo"></h2>
             <button>sair</button>
         </div>
     </header>
@@ -50,7 +51,7 @@
             <div class="borda3"></div>
                 <div class="main-right">
                     <h2>Seu Saldo é</h2>
-                    <p>Saldo_Number</p>
+                    <p id="saldoCliente"></p>
                 </div>
         </div>
     </section>
@@ -75,7 +76,23 @@
             <p>Clique aqui abaixo para trancar sua conta </p>
             <button class="button-bloq">Bloquear</button>
         </div>
-    </section>  
+    </section>
+    <script>
+        // Evento 'DOMContentLoaded' é acionado quando a estrutura HTML é carregada
+        document.addEventListener('DOMContentLoaded', function() {
+            // Recupera a string JSON do localStorage e converte de volta para um objeto
+            var dadosClienteString = localStorage.getItem('dadosCliente');
+            var dadosCliente = JSON.parse(dadosClienteString);
+            //let nome = dadosCliente.nome;
+
+            var nomeTitulo = document.getElementById('nomeTitulo');
+            nomeTitulo.textContent = dadosCliente.nome;
+
+            var saldoCliente = document.getElementById('saldoCliente')
+            saldoCliente.textContent = String(dadosCliente.saldo);
+
+        });
+    </script>
 </body>
 </html>
 

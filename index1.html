@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/header.css">
     <link rel="stylesheet" href="/src/main.css">
     <script src="/src/script.js" defer></script>
+    <script src="../CreamBank/Login.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -94,8 +95,9 @@
                     const data = await response.json();
                     // Imprimir os dados no console
                     console.log(data);
-                    debugger
                     window.location.href = '../CreamBank/src/login.html';
+                    localStorage.setItem("dadosCliente", JSON.stringify(data))
+                    cliente(data)
                 } else {
                     // Se a resposta não for bem-sucedida, lançar um erro
                     throw new Error('Erro ao fazer login');
