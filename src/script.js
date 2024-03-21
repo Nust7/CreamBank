@@ -39,3 +39,9 @@ function enviarFormulario() {
     alert('Erro durante o envio do formulário. Por favor, tente novamente mais tarde.');
   });
 }
+
+export function cliente (){
+  console.log("Chegou no cliente")
+  // const car = {"numeroConta": data.numeroConta, "nome": data.nome, "saldo": data.saldo};
+  // window.location.href = 'login.html';
+}
