@@ -9,7 +9,7 @@ function enviarFormulario() {
 
   dadosFormulario.append("ativo", true);
   dadosFormulario.append("saldo", 1000);
-  
+
   // Converte os dados do formulário para um objeto JSON
   const objetoJSON = {};
   dadosFormulario.forEach(function(valor, chave){
@@ -40,7 +40,6 @@ function enviarFormulario() {
 
 
 function transferir(){
-  console.log("aqui")
   const transferencia = document.getElementById("formulario-transferencia");
   const dadosTransferencia = new FormData(transferencia);
 
@@ -48,15 +47,12 @@ function transferir(){
   console.log("Local storage " + localStorage.getItem("dadosCliente"))
   numeroConta = dadosCliente.numeroConta;
 
-  console.log("numero"+ numeroConta)
   dadosTransferencia.append("contaRemetente", numeroConta);
 
   const objetoJSON = {};
   dadosTransferencia.forEach(function(valor, chave){
     objetoJSON[chave] = valor;
   });
-  console.log("json "+ objetoJSON)
-
   fetch('http://localhost:8080/transacoes/enviarDinheiro', {
     method: 'POST',
     headers: {
@@ -67,7 +63,12 @@ function transferir(){
       .then(function(response) {
         if (response.ok) {
           alert('Transferência enviado com sucesso!');
-          // Faça qualquer outra ação necessária após o envio do formulário
+          //var saldoAPI = response.body
+            response.json().then(function(data) {
+                const saldo = data;
+                // Atualiza o saldo na tela
+                document.getElementById('saldoCliente').textContent = saldo.toString();
+            });
         } else {
           alert('Erro ao enviar o Transferência. Por favor, tente novamente.');
         }
