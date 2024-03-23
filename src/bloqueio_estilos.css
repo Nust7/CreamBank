@@ -37,13 +37,15 @@ body {
 
 .cellphone-container {
     width: 27rem;
-    height: 52rem;
+    height: 49rem;
     position: absolute;
     right: 19rem;
-    bottom: 6rem;
+    bottom: 10rem;
     text-align: center;
     background: url(/src/imagens/celular-semfundo2-Photoroom.png-Photoroom.png) no-repeat center/cover;
 }
+
+
 .boxcell-phone {
     height: 100%;
 }
@@ -94,4 +96,26 @@ body {
     border-radius: .7rem;
     background: #ccc;
     padding: 1rem 0.9rem;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+    justify-content: space-between;
+    display: flex;
+}
+footer p {
+    text-align:left;
+    color: white;
+    width: 42%;
+    font-size: .8rem;
+    font-size: .7rem;
+    bottom: 100%;
+    justify-content: end; align-items: end;
+    margin-top: 3.5rem;
+    opacity: .6;
+}
+footer img {
+    width: 35rem;
 }
