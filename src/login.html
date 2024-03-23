@@ -62,21 +62,21 @@
     </div>
 </section>
 
-<section class="botao-infos">
-    <div class="conteudo-botao">
-        <div class="titleContainer">
-            <h1 class="titleTransferencia">Transferência</h1>
-        </div>
-        <h2 class="botaozin">conta</h2>
-        <input type="text" id="conta" placeholder="Digite a conta" required>
-        <h2 class="botaozin">valor</h2>
-        <input type="text" id="valor" placeholder="Digite o valor">
-
-        <div class="bot">
-            <button class="bot1"> Transferir</button>
-        </div>
+<form id="formulario-transferencia" class="conteudo-botao">
+    <div class="titleContainer">
+        <h1 class="titleTransferencia">Transferência</h1>
     </div>
-</section>
+    <h2 class="botaozin">conta</h2>
+    <input type="text" name="contaFavorecido" id="contaFavorecido" placeholder="Digite a conta" required>
+    <h2 class="botaozin">valor</h2>
+    <input type="text" name="valor" id="valor" placeholder="Digite o valor">
+
+    <div class="bot">
+        <button class="bot1" type="button" onclick="transferir()">Transferir</button>
+    </div>
+</form>
+
+
 <section class="botao-roubo-celular">
     <div class="conteudo-botao-roubo">
         <h2 class="roubo-celular">celular Roubado ?</h2>
