@@ -184,19 +184,18 @@ button:hover {
     border-bottom: 2px solid #12111f;
 }
 
+.main-right {
+    margin: 0 auto;
+}
+
 .main-right h2{
     margin: 2rem 0;
     text-align: center;
     font-size: 1.5rem;
     color: #1f2111;
+    text-transform: capitalize;
 }
 
-.main-right p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-    color: #12111f;
-}
 .botao-infos {
     margin-top: 2rem;
     height: 38rem;
