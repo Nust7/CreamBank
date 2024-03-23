@@ -1,19 +1,17 @@
-const apiKey = "http://localhost:8080/cliente/buscarTodos";
-
-const res = await fetch(apiKey);
-const data = await res.json()
-console.log(data)
-
 function enviarFormulario() {
+  console.log("aqui")
   // Obtém os dados do formulário
-  var formulario = document.getElementById("form-cadastrar");
-  var dadosFormulario = new FormData(formulario);
+  const formulario = document.getElementById("form-cadastrar");
+  const dadosFormulario = new FormData(formulario);
+
+  console.log("Formulario:" + formulario)
+  console.log("dadosFormulario:" + dadosFormulario)
 
   dadosFormulario.append("ativo", true);
   dadosFormulario.append("saldo", 1000);
   
   // Converte os dados do formulário para um objeto JSON
-  var objetoJSON = {};
+  const objetoJSON = {};
   dadosFormulario.forEach(function(valor, chave){
     objetoJSON[chave] = valor;
   });

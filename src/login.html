@@ -9,88 +9,98 @@
     <title>Document</title>
 </head>
 <body>
-    <header> 
-        <div class="logo"> <img src="/src/imagens/logo-maior-semfundo.png" alt=""></div>
+<header>
+    <div class="logo"><img src="/src/imagens/logo-maior-semfundo.png" alt=""></div>
 
-        <div class="login-inicial">
-            <h2>Olá,<span></span></h2>
-            <h2 id="nomeTitulo"></h2>
-            <button>sair</button>
+    <div class="login-inicial">
+        <h2>Olá,<span></span></h2>
+        <h2 id="nomeTitulo"></h2>
+        <button>sair</button>
+    </div>
+</header>
+<section class="container-lista">
+    <div class="lista-horizontal">
+        <ul>
+            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
+            <li class="transfer clickado"><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a>
+            </li>
+            <li class="bloq-telefone"><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de
+                celular</a></li>
+            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>cartões</a>
+            </li>
+            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a>
+            </li>
+            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="container-left">
+    <div class="conteudo-left">
+        <h2 class="left-h2">extrato
+            <div class="borda"></div>
+        </h2>
+        <h3 class="left-h3"> Transferência Realizada</h3>
+        <p class="left-p">data: <span>__/__/__</span></p>
+        <p class="left-p">para: <span>Nome</span></p>
+        <p class="left-p">valor: <span>valor</span></p>
+        <div class="borda2"></div>
+        <div class="left-bottom">
+            <h3 class="left-h33"> Transferência Realizada</h3>
+            <p class="left-p2">data: <span>__/__/__</span></p>
+            <p class="left-p2">para: <span>Nome</span></p>
+            <p class="left-p2">valor: <span>valor</span></p>
         </div>
-    </header>
-    <section class="container-lista">
-        <div class="lista-horizontal">
-            <ul>
-                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
-                <li class="transfer clickado"><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a></li>
-                <li class="bloq-telefone"><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de celular</a></li>
-                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>cartões</a></li>
-                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a></li>
-                <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a></li>
-            </ul>
+    </div>
+    <div class="conteudo-right">
+        <h2 class="right-h2">Saldo</h2>
+        <div class="borda3"></div>
+        <div class="main-right">
+            <h2>Seu Saldo é</h2>
+            <p id="saldoCliente"></p>
         </div>
-    </section>
-    <section class="container-left">
-        <div class="conteudo-left">
-            <h2 class="left-h2">extrato <div class="borda"></div></h2>
-            <h3 class="left-h3"> Transferência Realizada</h3>
-            <p  class="left-p">data: <span>__/__/__</span></p> 
-            <p  class="left-p">para: <span>Nome</span></p>
-            <p  class="left-p">valor: <span>valor</span></p>
-            <div class="borda2"></div>
-            <div class="left-bottom">
-                <h3 class="left-h33"> Transferência Realizada</h3>
-                <p  class="left-p2">data: <span>__/__/__</span></p> 
-                <p  class="left-p2">para: <span>Nome</span></p>
-                <p  class="left-p2">valor: <span>valor</span></p>
-            </div>
-        </div>
-        <div class="conteudo-right">    
-            <h2 class="right-h2">Saldo</h2>
-            <div class="borda3"></div>
-                <div class="main-right">
-                    <h2>Seu Saldo é</h2>
-                    <p id="saldoCliente"></p>
-                </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section class="botao-infos"> 
-        <div class="conteudo-botao">
-            <h2 class="botaozin">conta</h2>
-            <input type="text" id="conta" placeholder="Digite a conta" required>
-            <h2 class="botaozin">valor</h2>
-            <input type="text" id="valor" placeholder="Digite o valor">
-
-            <div class="bot"> 
-                <button class="bot1"> Transferir </button>
-            </div>
+<section class="botao-infos">
+    <div class="conteudo-botao">
+        <div class="titleContainer">
+            <h1 class="titleTransferencia">Transferência</h1>
         </div>
-    </section>
-    <section class="botao-roubo-celular"> 
-        <div class="conteudo-botao-roubo">
-            <h2 class="roubo-celular">celular Roubado ?</h2>
-            <label for="#">Digite sua senha:</label>
-            <input type="text" name="senha" id="quantidade">
-            <p>Clique aqui abaixo para trancar sua conta </p>
-            <button class="button-bloq">Bloquear</button>
+        <h2 class="botaozin">conta</h2>
+        <input type="text" id="conta" placeholder="Digite a conta" required>
+        <h2 class="botaozin">valor</h2>
+        <input type="text" id="valor" placeholder="Digite o valor">
+
+        <div class="bot">
+            <button class="bot1"> Transferir</button>
         </div>
-    </section>
-    <script>
-        // Evento 'DOMContentLoaded' é acionado quando a estrutura HTML é carregada
-        document.addEventListener('DOMContentLoaded', function() {
-            // Recupera a string JSON do localStorage e converte de volta para um objeto
-            var dadosClienteString = localStorage.getItem('dadosCliente');
-            var dadosCliente = JSON.parse(dadosClienteString);
-            //let nome = dadosCliente.nome;
+    </div>
+</section>
+<section class="botao-roubo-celular">
+    <div class="conteudo-botao-roubo">
+        <h2 class="roubo-celular">celular Roubado ?</h2>
+        <label for="#">Digite sua senha:</label>
+        <input type="text" name="senha" id="quantidade">
+        <p>Clique aqui abaixo para trancar sua conta </p>
+        <button class="button-bloq">Bloquear</button>
+    </div>
+</section>
+<script>
+    // Evento 'DOMContentLoaded' é acionado quando a estrutura HTML é carregada
+    document.addEventListener('DOMContentLoaded', function () {
+        // Recupera a string JSON do localStorage e converte de volta para um objeto
+        var dadosClienteString = localStorage.getItem('dadosCliente');
+        var dadosCliente = JSON.parse(dadosClienteString);
+        //let nome = dadosCliente.nome;
 
-            var nomeTitulo = document.getElementById('nomeTitulo');
-            nomeTitulo.textContent = dadosCliente.nome;
+        var nomeTitulo = document.getElementById('nomeTitulo');
+        nomeTitulo.textContent = dadosCliente.nome;
 
-            var saldoCliente = document.getElementById('saldoCliente')
-            saldoCliente.textContent = String(dadosCliente.saldo);
-        });
-    </script>
+        var saldoCliente = document.getElementById('saldoCliente')
+        saldoCliente.textContent = String(dadosCliente.saldo);
+    });
+</script>
 </body>
 </html>
 

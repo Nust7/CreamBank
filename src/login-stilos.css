@@ -34,8 +34,11 @@ h2 {
 .login-inicial {
     display: flex;
     text-align: center; align-items: center; justify-content: center;
-    gap: 10rem;
-    margin: 1.2rem 1.4rem;
+    gap: 1.2rem;
+    margin: 1.2rem 2rem;
+}
+.login-inicial button{
+    margin-left: 3rem;
 }
 
 button {
@@ -294,4 +297,12 @@ input{
     border: none;
     padding: 1.2rem 2.5rem;
     cursor: pointer;
+}
+.titleContainer{
+    display:block;
+    bottom: 5rem;
+    position:relative;
+    width: 100%;
+    font-size: 22px;
+
 }
