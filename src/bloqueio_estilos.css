@@ -11,6 +11,10 @@ body {
     background: #12111f;
 }
 
+a {
+    text-decoration: none;
+}
+
 .containerleft {
     width:  45%;   
     position: absolute;
@@ -96,6 +100,10 @@ body {
     border-radius: .7rem;
     background: #ccc;
     padding: 1rem 0.9rem;
+}
+
+.img-stonk a, h2 {
+    color: #12111f;
 }
 footer {
     position: fixed;
