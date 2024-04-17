@@ -222,7 +222,7 @@ input{
 }
 
 .botaozin {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #12111f;
     text-transform: capitalize;
 }
@@ -248,7 +248,7 @@ input{
     background: #12111f;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .bot button:hover {
@@ -303,5 +303,102 @@ input{
     position:relative;
     width: 100%;
     font-size: 22px;
+
+}
+
+.botao-roubo-celular {
+    display: block;
+    position: absolute;
+    top: calc(26% + 20px); 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.titleTransferencia {
+    font-size: 1.6rem;
+    margin-bottom: -1.8rem;
+}
+
+.background-cartao {
+    background-color: #12111f;
+    width: 25rem;
+    height: 17rem;
+    justify-content: center; align-items: center; 
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    padding: 0;
+}
+
+.background-cartao img {
+    width: 20rem;
+    margin-top: 2rem;
+}
+
+.conteudo-botao2 {
+        width: 40rem;
+        height: 36rem;
+        position: relative;
+        margin: 2.2rem auto;
+        background: #ccc;
+        border-radius: .5rem;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        padding-top: 4rem;
+}
+
+#chip-image { 
+    width: 3rem;
+    display: flex;
+}
+
+.container-dados-card-cartao {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.dados-cartao-cvc {
+    color: white;
+    padding: 2rem 1.5rem;
+    margin-left: -5rem;
+}
+
+.cod-cartao-number {
+    color: white;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.conteudo-botao2 {
+    display: none;
+    position: relative; 
+    top: 0rem; 
+    left: 1; 
+}
+
+.conteudo-investimentos {
+        width: 40rem;
+        height: 36rem;
+        position: relative;
+        margin: 2.2rem auto;
+        background: #ccc;
+        border-radius: .5rem;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        padding-top: 4rem;
+}
+
+.conteudo-servicos {
+    width: 40rem;
+    height: 36rem;
+    position: relative;
+    margin: 2.2rem auto;
+    background: #ccc;
+    border-radius: .5rem;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
 
 }
