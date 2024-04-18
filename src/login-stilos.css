@@ -413,6 +413,7 @@ input{
     color: #ffffff;
     border-radius: 3px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-servicos:hover {
@@ -427,6 +428,7 @@ input{
     color: white;
     display: flex;
     border-radius: 0.5rem;
+    cursor: pointer;
 } 
 
 .caixinhas img {
