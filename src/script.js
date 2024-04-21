@@ -108,14 +108,18 @@ async function buscarCartao() {
     let dadosCliente = JSON.parse(localStorage.getItem("dadosCliente"));
     const conta = dadosCliente.numeroConta;
 
+    let formulario = document.getElementById("form-cartao");
+
 
     var url = 'http://localhost:8080/cartao/buscar?numeroConta=' + conta;
     const response = await fetch(url)
-    console.log(response)
 
     if (response.ok) {
         const data = await response.json();
-        alert(JSON.stringify(data)); // Exibindo os dados retornados pela requisição
+        document.getElementById('cvc').textContent = data['cvc'];
+        document.getElementById('numero').textContent = data['numero'];
+        document.getElementById('nome').textContent = data['nome'];
+
     } else {
         alert('Erro ao buscar o cartão'); // Tratamento de erro caso a requisição falhe
     }
