@@ -103,3 +103,20 @@ async function bloquearConta() {
 
 
 }
+
+async function buscarCartao() {
+    let dadosCliente = JSON.parse(localStorage.getItem("dadosCliente"));
+    const conta = dadosCliente.numeroConta;
+
+
+    var url = 'http://localhost:8080/cartao/buscar?numeroConta=' + conta;
+    const response = await fetch(url)
+    console.log(response)
+
+    if (response.ok) {
+        const data = await response.json();
+        alert(JSON.stringify(data)); // Exibindo os dados retornados pela requisição
+    } else {
+        alert('Erro ao buscar o cartão'); // Tratamento de erro caso a requisição falhe
+    }
+}
