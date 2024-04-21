@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/login-stilos.css">
-    <script src="/src/script.js" defer></script>
-    <script src="/src/button_displays.js" defer></script>
+    <link rel="stylesheet" href="login-stilos.css">
+    <script src="script.js" defer></script>
+    <script src="button_displays.js" defer></script>
     <title>Document</title>
 </head>
 <body>
 <header>
-    <div class="logo"><img src="/src/imagens/logo-maior-semfundo.png" alt=""></div>
+    <div class="logo"><img src="imagens/logo-maior-semfundo.png" alt=""></div>
 
     <div class="login-inicial">
         <h2>Olá,<span></span></h2>
@@ -21,16 +21,23 @@
 <section class="container-lista">
     <div class="lista-horizontal">
         <ul>
-            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/home.png" alt=""><br>Ínicio</a></li>
-            <li class="transfer clickado"><a href=""><a href="#"><img src="/src/imagens/money-img.png" alt=""><br>Transferência</a>
+            <li class="clickado">
+                <a href="#"><img src="imagens/home.png" alt=""><br>Ínicio</a>
             </li>
-            <li class="bloq-telefone"><a href=""><a href="#"><img src="/src/imagens/roubo-img.png" alt=""><br>Roubo de
-                celular</a></li>
-            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/cartao-img.png" alt=""><br>Cartões</a>
+            <li class="transfer clickado">
+                <a href="#"><img src="imagens/money-img.png" alt=""><br>Transferência</a>
             </li>
-            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/img-img.png" alt=""><br>Investimentos</a>
+            <li class="bloq-telefone">
+                <a href="#"><img src="imagens/roubo-img.png" alt=""><br>Roubo de celular</a>
             </li>
-            <li class="clickado"><a href=""><a href="#"><img src="/src/imagens/servicos.png" alt=""><br>Serviços</a>
+            <li class="clickado">
+                <a href="#"><img src="imagens/cartao-img.png" alt=""><br>Cartões</a>
+            </li>
+            <li class="clickado">
+                <a href="#"><img src="imagens/img-img.png" alt=""><br>Investimentos</a>
+            </li>
+            <li class="clickado">
+                <a href="#"><img src="imagens/servicos.png" alt=""><br>Serviços</a>
             </li>
         </ul>
     </div>
@@ -39,7 +46,7 @@
     <div class="conteudo-left">
         <h2 class="left-h2">extrato
             <div class="borda"></div>
-        </h2>q
+        </h2>
         <h3 class="left-h3"> Transferência Realizada</h3>
         <p class="left-p">data: <span>__/__/__</span></p>
         <p class="left-p">para: <span>Nome</span></p>
@@ -61,7 +68,7 @@
     </div>
 </section>
 
-<form id="formulario-transferencia" class="conteudo-botao">   
+<form id="formulario-transferencia" class="conteudo-botao">
     <div class="titleContainer">
         <h1 class="titleTransferencia">Transferência</h1>
     </div>
@@ -76,67 +83,71 @@
 </form>
 
 
-<section class="botao-roubo-celular" >
+<form id="conteudo-botao-roubo-form" class="botao-roubo-celular">
     <div class="conteudo-botao-roubo">
         <h2 class="roubo-celular">celular Roubado ?</h2>
-        <label for="#">Digite sua senha:</label>
-        <input type="text" name="senha" id="quantidade">
+        <label>Digite sua senha:</label>
+        <input type="text" name="senha" id="senha">
         <p>Clique aqui abaixo para trancar sua conta </p>
-        <button class="button-bloq botao-roubo">Bloquear</button>
+        <button class="button-bloq botao-roubo" onclick="bloquearConta()">Bloquear</button>
     </div>
-</section>
+</form>
 
 <section class="conteudo-botao2">
     <div class="container-total">
-        <div class="background-card-cartao"> 
-            <h1 class="title-container-cartao">Cartão</h1> 
+        <div class="background-card-cartao">
+            <h1 class="title-container-cartao">Cartão</h1>
         </div>
         <div class="background-cartao">
-            <img src="/src/imagens/logo-maior.png" alt="">
+            <img src="imagens/logo-maior.png" alt="">
             <br>
             <div class="container-dados-card-cartao">
-                <img id="chip-image" class="chip-img" src="/src/imagens/chip.png" alt="">
-                <p class="dados-cartao-cvc">cvc<span></span></p>  <p class="dados-cartao-cvc">val<span></span></p> 
+                <img id="chip-image" class="chip-img" src="imagens/chip.png" alt="">
+                <p class="dados-cartao-cvc">cvc<span></span></p>
+                <p class="dados-cartao-cvc">val<span></span></p>
             </div>
             <div class="cod-cartao-number"><p>5608 9572 6381 2581 </p></div>
-            <div class="nome-titular-cartao"><h2>Nomis Nomealdo do Namildo</h2><ww/div>
+            <div class="nome-titular-cartao"><h2>Nomis Nomealdo do Namildo</h2>
+                </div>
+            </div>
         </div>
-    </div>
 </section>
 
 <section class="conteudo-investimentos">
     <div class="investimentos-container">
-        <div class="background-container"> 
-            <h1 class="title-container-investimentos">Como você quer investir ?</h1> 
+        <div class="background-container">
+            <h1 class="title-container-investimentos">Como você quer investir ?</h1>
         </div>
-            <div class="container-dados-investimentos">
-                <button class="caixinhas"><img src="/src/imagens/caixinhas.png" alt=""><p>Caixinha</p></button>
-                <br>
-                <button class="caixinhas"><img src="/src/imagens/cdb.png" alt=""><p>CDB</p></button>
-                <br>
-                <button class="caixinhas"><img src="/src/imagens/LCIeLCA.png" alt=""><p>LCI e LCA</p></button>
-                <br>
-                <button class="caixinhas"><img src="/src/imagens/BolsaDeValores.png" alt=""><p>Bolsa de Valores</p></button>
-            </div>
+        <div class="container-dados-investimentos">
+            <button class="caixinhas"><img src="imagens/caixinhas.png" alt="">
+                <p>Caixinha</p></button>
+            <br>
+            <button class="caixinhas"><img src="imagens/cdb.png" alt="">
+                <p>CDB</p></button>
+            <br>
+            <button class="caixinhas"><img src="imagens/LCIeLCA.png" alt="">
+                <p>LCI e LCA</p></button>
+            <br>
+            <button class="caixinhas"><img src="imagens/BolsaDeValores.png" alt="">
+                <p>Bolsa de Valores</p></button>
         </div>
+    </div>
     </div>
 </section>
 
 <section class="conteudo-servicos">
     <div class="investimentos-servicos">
-        <div class="background-servicos"> 
-            <h1 class="title-container-servicos">Saiba mais sobre oque temos a oferecer</h1> 
+        <div class="background-servicos">
+            <h1 class="title-container-servicos">Saiba mais sobre oque temos a oferecer</h1>
         </div>
-            <div class="container-dados-servicos">
-                <button class="btn-servicos">Peça Seu empréstimo</button>
-                <br>
-                <button class="btn-servicos">Renegocie sua dívida</button>
-            </div>
+        <div class="container-dados-servicos">
+            <button class="btn-servicos">Peça Seu empréstimo</button>
+            <br>
+            <button class="btn-servicos">Renegocie sua dívida</button>
         </div>
     </div>
+    </div>
 </section>
-
-
 
 
 <script>
