@@ -12,6 +12,7 @@
     --bg-key: #3f3e3e; 
     --color-p: #020202;
     --color-p-footer: #ffffff; 
+    --bg-all: #12111f;
 }
 
 a {
@@ -121,3 +122,4 @@ footer p {
     margin-top: 3.8rem;
     opacity: .6;
 }
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tenor Sans';
+}
+
+:root {
+    --color-h1: #ffffff;
+    --bg-chaves: #c6c9c2;
+    --bg-key: #3f3e3e; 
+    --color-p: #020202;
+    --color-p-footer: #ffffff; 
+    --bg-all: #12111f;
+}
+
+body{
+    background-color: var(--bg-all);
+}
+
+header{
+    margin: 0 auto;
+}
+
+.caixa-info-esqueci {
+    margin: 0 auto;
+    width: 30%;
+    background-color: #c6c9c2;
+    width: 100rem;
+    height: 35rem;
+    border-radius: .6rem;
+    justify-content: center; align-items: center;
+    text-align: center;
+}
+
+
+.caixa-info-esqueci h1{
+    margin-top: 2.5rem;
+    padding: .6rem;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 2.3rem;
+    width: 100%;
+}
+
+.insira { 
+    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.rodape {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50rem;
+}
+
+.linha-password{
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    width: 30rem;
+    font-size: 2rem;
+    border-bottom: 3px solid;
+    text-align: center;
+    background-color: none;
+}
+
+.NumeroConta {
+    font-size: 2rem;
+    border: 0px;
+    background: none;
+    text-align: center; align-items: center;
+    cursor: pointer;
+}
+
+.enviar-redefinicao{
+    margin-top: .3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-all);
+    color: var(--bg-chaves);
+}
+
+.enviar-redefinicao:hover {
+     background-color: white;
+     color: black;
+     transition: .7s;
+}
+
+.total {
+    margin: 0 auto;
+}
+
+

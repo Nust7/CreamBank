@@ -124,3 +124,4 @@ async function buscarCartao() {
         alert('Erro ao buscar o cartão'); // Tratamento de erro caso a requisição falhe
     }
 }
+
